@@ -1,5 +1,12 @@
 # Azure Functions Instructions
 
+### references
+https://docs.conda.io/projects/conda/en/stable/user-guide/getting-started.html
+https://www.anaconda.com/download
+https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-cli-python
+https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local
+
+
 ### Install Anaconda from this website for both m1 and intel processors
 ```
 https://www.anaconda.com/
@@ -22,6 +29,8 @@ brew link --overwrite azure-functions-core-tools@4
 ```
 
 ### Modify these variables as per your choice
+Note: storage account name should be unique across the azure accounts so be creative
+
 ```shell
 export RESOURCE_GROUP_NAME=OpenAiResourceGroup
 export AZURE_LOCATION=eastus
@@ -85,3 +94,8 @@ az functionapp create --resource-group $RESOURCE_GROUP_NAME --consumption-plan-l
 ```shell
 func azure functionapp publish $AZURE_FUNCTIONS_APP_NAME
 ```
+
+
+Notes:
+
+1. when you add any new requirements for the functions it should be added to requirements.txt
