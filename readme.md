@@ -45,15 +45,6 @@ export AZURE_FUNCTIONS_APP_NAME=uop-app-name-1
 mkdir -p ~/Projects/azure
 ```
 
-#### if you get error with venv install this and repeat above step from terminal
-```shell
-sudo apt-get install python3-venv
-```
-
-### activate the virtual envfrom terminal
-```shell
-source .venv/bin/activate
-```
 
 ### create the azure functions app project folder from terminal can be any name
 ```shell
